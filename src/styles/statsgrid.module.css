@@ -1,0 +1,103 @@
+.statsGrid{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+.statCard{
+ display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 ;   /* Grow, shrink, minimum width */
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, var(--bg-surface), var(--bg-surface-alt));
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(6px);
+}
+.statCard .icon{
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.statCard:hover{
+    transform: translateY(-8px);
+    transition: ease-in-out;
+
+}
+.totalicon{
+    box-shadow: inset 4px;
+    background: var(--accent-glow);
+}
+.resolvedicon{
+    background: var(--status-resolved);
+}
+.pending{
+    background: var(--status-pending);
+}
+.rejectedicon{
+    background: var(--status-rejected);
+}
+.statsGrid .statCard:nth-child(1):hover{
+    border: solid var(--accent);
+}
+.statsGrid .statCard:nth-child(2):hover{
+    border: solid var(--status-resolved);
+}
+.statsGrid .statCard:nth-child(3):hover{
+    border: solid var(--status-pending);
+}
+.statsGrid .statCard:nth-child(4):hover{
+    border: solid var(--status-rejected);
+}
+
+.statCard h3{
+
+    color: var(--text-primary);
+}
+.statCard p{
+    margin-top: 7px;
+}
+
+@media (max-width: 480px) {
+
+    .statsGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statCard {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .statCard .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .statCard h3 {
+        font-size: 1rem;
+    }
+
+    .statCard p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .statsGrid {
+        gap: 16px;
+    }
+
+    .statCard {
+        flex: 1 1 45%;
+    }
+}
