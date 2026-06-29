@@ -29,10 +29,12 @@
 
 }
 .statCard:hover{
-    transform: translateY(-8px);
-    transition: ease-in-out;
-
+     transform: translateY(-4px);
+    box-shadow: var(--shadow-lifted);
+    border-color: var(--accent);
 }
+
+
 .totalicon{
     box-shadow: inset 4px;
     background: var(--accent-glow);

@@ -119,5 +119,6 @@ const issues = [
     location: 'Park Road',
     reportedOn: '2026-05-28',
   },
-]
-export default issues
+];
+
+export default issues;

@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '../styles/navbar.module.css'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoNotificationsCircleOutline } from "react-icons/io5";
+
+import Button from './Button';
 const NavBar = () => {
   return (
     <div className={styles.NavBar}>
@@ -23,6 +25,8 @@ const NavBar = () => {
             <button className={styles.notification}>
                 <IoNotificationsCircleOutline className={styles.notification}/>
             </button>
+            <Button text="log in" variant="navbtn"/>
+            <Button text="Sign in"variant="navbtn"/>
         </div>
       
     </div>

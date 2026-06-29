@@ -1,12 +1,11 @@
 import React from 'react'
-import styles from '../styles/stausbadge.module.css'
+import styles from '../styles/statusbadge.module.css'
 
-const StatusBadge = (status) => {
+const StatusBadge = ({ status }) => {
   return (
-    <span className={`${styles.badge} ${styles[status.toLowerCase()]}`}
-    >{status}</span>
-      
-    
+    <span className={`${styles.badge} ${styles[status.toLowerCase()]}`}>
+      {status}
+    </span>
   )
 }
 

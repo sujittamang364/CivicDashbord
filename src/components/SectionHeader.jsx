@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/sectionheader.module.css'
 
-const SectionHeader = ({ title, Icon, variant, button }) => {
+const SectionHeader = ({ title, Icon, variant, button,reportbtn }) => {
   return (
     <div className={styles.container}>
       
@@ -11,9 +11,10 @@ const SectionHeader = ({ title, Icon, variant, button }) => {
           {title}
         </p>
       </div>
-
-      {button}
-
+      <div className={styles.btn}>
+       {button}
+       {reportbtn}
+      </div>
     </div>
   )
 }

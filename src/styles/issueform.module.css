@@ -1,0 +1,80 @@
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 32px;
+    background: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-card);
+}
+
+.container h2 {
+    margin-bottom: 30px;
+    color: var(--text-primary);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.formGroup label {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 14px;
+    background: var(--bg-base);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: var(--transition-base);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+small {
+    margin-top: 6px;
+    color: var(--text-muted);
+}
+
+.error {
+    color: var(--status-rejected);
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: var(--transition-base);
+}
+
+.submitBtn:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+}
