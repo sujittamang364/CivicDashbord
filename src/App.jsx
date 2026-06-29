@@ -9,10 +9,14 @@ import issues from "./data/data";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import ReportIssue from "./components/IssueForm";
-
+import SearchFilter from "./components/SearchFilter";
 const App = () => {
   const [showIssues, setShowIssues] = useState(true);
   const [showReportForm, setShowReportForm] = useState(false);
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All Categories");
+  const [status, setStatus] = useState("All Status");
+
 
   return (
     <div>
@@ -41,6 +45,14 @@ const App = () => {
           />
         }
       />
+      <SearchFilter
+        search={search}
+        setSearch={setSearch}
+        category={category}
+        setCategory={setCategory}
+        status={status}
+        setStatus={setStatus}
+        />
 
       {showIssues && (
         <div className="issue-grid">
@@ -63,6 +75,7 @@ const App = () => {
           </div>
         </div>
       )}
+    
     </div>
   );
 };

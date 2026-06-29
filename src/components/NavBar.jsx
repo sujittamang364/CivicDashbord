@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/navbar.module.css'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoNotificationsCircleOutline } from "react-icons/io5";
-
+import { MdWifiChannel } from "react-icons/md";
 import Button from './Button';
 const NavBar = () => {
   return (
@@ -10,8 +10,10 @@ const NavBar = () => {
         <div className={styles.navbar_left}>
         <button className={styles.hamburger}>
             <RxHamburgerMenu className={styles.ham}/>
-            
         </button>
+        <div className={styles.icon}>
+            <MdWifiChannel className={styles.icn}/>
+        </div>
         <div className={styles.content}>
             <p className={styles.navbar_welcom}>
                 Welcome to CivicConnect
