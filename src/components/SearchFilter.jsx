@@ -16,10 +16,12 @@ const SearchFilter = () => {
       issue.location.toLowerCase().includes(search.toLowerCase());
 
     const matchesCategory =
-      category === "All Categories" || issue.category === category;
+      category === "All Categories" ||
+      issue.category === category;
 
     const matchesStatus =
-      status === "All Status" || issue.status === status;
+      status === "All Status" ||
+      issue.status === status;
 
     return matchesSearch && matchesCategory && matchesStatus;
   });
@@ -48,11 +50,11 @@ const SearchFilter = () => {
             onChange={(e) => setCategory(e.target.value)}
           >
             <option>All Categories</option>
-            <option>Road</option>
+            <option>Roads</option>
             <option>Electricity</option>
-            <option>Water</option>
-            <option>Garbage</option>
-            <option>Others</option>
+            <option>Water Supply</option>
+            <option>Sanitation</option>
+            <option>Public Safety</option>
           </select>
 
           <select
@@ -62,8 +64,8 @@ const SearchFilter = () => {
           >
             <option>All Status</option>
             <option>Pending</option>
-            <option>In Progress</option>
             <option>Resolved</option>
+            <option>Rejected</option>
           </select>
         </div>
       </div>

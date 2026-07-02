@@ -8,9 +8,7 @@ const NavBar = () => {
   return (
     <div className={styles.NavBar}>
         <div className={styles.navbar_left}>
-        <button className={styles.hamburger}>
-            <RxHamburgerMenu className={styles.ham}/>
-        </button>
+       
         <div className={styles.icon}>
             <MdWifiChannel className={styles.icn}/>
         </div>

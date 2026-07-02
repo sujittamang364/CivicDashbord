@@ -19,23 +19,7 @@
   padding: auto;
   margin: auto;
 }
-.hamburger {
-  background: none;
-  border: none;
 
-  cursor: pointer;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: var(--text-secondary);
-}
-
-.ham {
-  display: none;
-  height: 25px;
-  width: 25px;
-}
 p {
   color: var(--accent-light);
   font-size: 18px;
